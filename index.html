@@ -66,27 +66,70 @@
             </svg>
         );
 
-        const Calendar = (props) => (
-            <IconBase {...props}><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></IconBase>
+        // New Thematic Icons
+        const Tent = (props) => (
+            <IconBase {...props}>
+                <path d="M2 21h20" />
+                <path d="M2 21 12 3 22 21" />
+                <path d="M12 21v-5" />
+            </IconBase>
         );
-        const Scroll = (props) => (
-            <IconBase {...props}><path d="M8 17a5 5 0 0 1-.59-9.91A5 5 0 0 1 12 11h9"/><path d="M8 17a5 5 0 0 1 5-5h9v10a5 5 0 0 1-5-5h-9"/><path d="M8 17a5 5 0 0 1-5 5H2v-6"/></IconBase>
+
+        const Tablets = (props) => (
+            <IconBase {...props}>
+                <path d="M12 5V19" />
+                <path d="M4 19h16" />
+                <path d="M4 19V5a2 2 0 0 1 2-2h5a1 1 0 0 1 1 1v15" />
+                <path d="M20 19V5a2 2 0 0 0-2-2h-5a1 1 0 0 0-1 1v15" />
+            </IconBase>
         );
+
         const Crown = (props) => (
             <IconBase {...props}><path d="m2 4 3 12h14l3-12-6 7-4-3-4 3-6-7z"/></IconBase>
         );
-        const Split = (props) => (
-            <IconBase {...props}><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></IconBase>
+
+        const SplitShield = (props) => (
+            <IconBase {...props}>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 2v20"/>
+            </IconBase>
         );
-        const Landmark = (props) => (
-            <IconBase {...props}><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></IconBase>
+
+        const Wall = (props) => (
+            <IconBase {...props}>
+                <path d="M4 21h16a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-4l-1-4H9l-1 4H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2z" />
+                <path d="M2 14h20" />
+                <path d="M6 14v7" />
+                <path d="M10 7v7" />
+                <path d="M14 14v7" />
+                <path d="M18 7v7" />
+            </IconBase>
         );
-        const BookOpen = (props) => (
-            <IconBase {...props}><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></IconBase>
+
+        const Pillar = (props) => (
+            <IconBase {...props}>
+                <path d="M4 21h16" />
+                <path d="M6 21v-14" />
+                <path d="M18 21v-14" />
+                <path d="M2 7h20" />
+                <path d="M6 4h12" />
+                <path d="M12 4v17" />
+            </IconBase>
         );
+
         const Cross = (props) => (
             <IconBase {...props}><path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"/></IconBase>
         );
+
+        const Scroll = (props) => (
+            <IconBase {...props}><path d="M8 17a5 5 0 0 1-.59-9.91A5 5 0 0 1 12 11h9"/><path d="M8 17a5 5 0 0 1 5-5h9v10a5 5 0 0 1-5-5h-9"/><path d="M8 17a5 5 0 0 1-5 5H2v-6"/></IconBase>
+        );
+
+        // Re-added BookOpen for references
+        const BookOpen = (props) => (
+            <IconBase {...props}><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></IconBase>
+        );
+
         const Info = (props) => (
             <IconBase {...props}><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></IconBase>
         );
@@ -95,9 +138,6 @@
         );
         const Users = (props) => (
             <IconBase {...props}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></IconBase>
-        );
-        const Handshake = (props) => (
-            <IconBase {...props}><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m9 11 3 3"/><path d="m19 8 2 2a1 1 0 1 1-2 2l-2-2"/><path d="m13 6 8 8"/><path d="m19 5 2 2"/><path d="m5 20 4.14-4.14a2 2 0 0 1 2.85 0l4 4a2 2 0 0 1 0 2.82l-1 1a2 2 0 0 1-2.83 0l-7.17-7.17a2.5 2.5 0 0 1 0-3.54l6.37-6.37a2.5 2.5 0 0 1 3.54 0l1 1a2.5 2.5 0 0 1 0 3.54L9 11"/></IconBase>
         );
 
 
@@ -317,14 +357,14 @@
 
         // --- 2. Data Definition ---
         const BIBLICAL_ERAS = [
-            { id: 'patriarchal', name: 'Patriarchal Age', color: 'bg-amber-600', icon: Calendar, text: 'text-amber-700', border: 'border-amber-600', bgLight: 'bg-amber-600' },
-            { id: 'exodus', name: 'Exodus', color: 'bg-orange-500', icon: Scroll, text: 'text-orange-600', border: 'border-orange-500', bgLight: 'bg-orange-500' },
+            { id: 'patriarchal', name: 'Patriarchal Age', color: 'bg-amber-600', icon: Tent, text: 'text-amber-700', border: 'border-amber-600', bgLight: 'bg-amber-600' },
+            { id: 'exodus', name: 'Exodus', color: 'bg-orange-500', icon: Tablets, text: 'text-orange-600', border: 'border-orange-500', bgLight: 'bg-orange-500' },
             { id: 'united', name: 'United Monarchy', color: 'bg-blue-600', icon: Crown, text: 'text-blue-700', border: 'border-blue-600', bgLight: 'bg-blue-600' },
-            { id: 'divided', name: 'Divided Kingdom', color: 'bg-red-500', icon: Split, text: 'text-red-600', border: 'border-red-500', bgLight: 'bg-red-500' },
-            { id: 'exile', name: 'Exile & Return', color: 'bg-purple-600', icon: Landmark, text: 'text-purple-700', border: 'border-purple-600', bgLight: 'bg-purple-600' },
-            { id: 'intertestamental', name: 'Intertestamental', color: 'bg-slate-500', icon: BookOpen, text: 'text-slate-600', border: 'border-slate-500', bgLight: 'bg-slate-500' },
+            { id: 'divided', name: 'Divided Kingdom', color: 'bg-red-500', icon: SplitShield, text: 'text-red-600', border: 'border-red-500', bgLight: 'bg-red-500' },
+            { id: 'exile', name: 'Exile & Return', color: 'bg-purple-600', icon: Wall, text: 'text-purple-700', border: 'border-purple-600', bgLight: 'bg-purple-600' },
+            { id: 'intertestamental', name: 'Intertestamental', color: 'bg-slate-500', icon: Pillar, text: 'text-slate-600', border: 'border-slate-500', bgLight: 'bg-slate-500' },
             { id: 'new_testament', name: 'New Testament', color: 'bg-emerald-600', icon: Cross, text: 'text-emerald-700', border: 'border-emerald-600', bgLight: 'bg-emerald-600' },
-            { id: 'covenants', name: 'Covenants', color: 'bg-yellow-500', icon: Handshake, text: 'text-yellow-600', border: 'border-yellow-500', bgLight: 'bg-yellow-500' },
+            { id: 'covenants', name: 'Covenants', color: 'bg-yellow-500', icon: Scroll, text: 'text-yellow-600', border: 'border-yellow-500', bgLight: 'bg-yellow-500' },
         ];
 
         const BIBLICAL_EVENTS = [
